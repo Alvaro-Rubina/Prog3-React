@@ -28,14 +28,14 @@ export const FormProduct :FC<IPropsFormProduct> = ({ handleAddProduct }) => {
         </Form.Group>
         <Form.Group controlId="formNombre">
             <Form.Label>Imagen</Form.Label>
-            <Form.Control type="text" name="imagen" placeholder="Ingrese la imagen del producto" value={values.imagen} onChange={handleChange}></Form.Control>
+            <Form.Control type="text" name="imagen" placeholder="Ingrese url a la imagen del producto" value={values.imagen} onChange={handleChange}></Form.Control>
         </Form.Group>
         <Form.Group controlId="formNombre">
             <Form.Label>Precio</Form.Label>
             <Form.Control type="number" name="precio" placeholder="Ingrese el precio del producto" value={values.precio} onChange={handleChange}></Form.Control>
         </Form.Group>
         <div className="d-flex justify-content-center mt-4">
-            <Button onClick={handleSubmitForm} variant="primary">Enviar Producto</Button>
+            <Button onClick={handleSubmitForm} variant="primary">Registrar Producto</Button>
         </div>
     </Form>
   )
